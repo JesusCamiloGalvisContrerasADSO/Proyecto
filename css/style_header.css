@@ -1,0 +1,55 @@
+*{
+    margin: 0;
+    padding: none;
+    box-sizing: border-box;
+}
+
+/* en este documento se va a trabajar todo el estilo que tenga el header  */
+
+@font-face {
+    font-family: inter;
+    src: url(../letra/Inter-VariableFont_slnt\,wght.ttf);
+}
+
+:root{
+    --tipo--fuente:inter;
+    --tamaño--texto: 18px;
+    --color--fondo:rgba(244, 244, 244, 1);
+    --color--encabezado:rgba(7, 96, 16, 1);
+    --color--blanco:#ffff
+    
+}
+
+body{
+    font-family:var(--tipo--fuente) ;
+    font-size:var(--tamaño--texto);
+    background-color: var(--color--fondo);
+}
+
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.fondo_header{
+background-color: var(--color--encabezado);
+
+}
+
+.encabezado{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 26px;
+    height: 60px;
+    color: var(--color--blanco);
+    font-weight: 600;
+}
+
+.logo{
+    height: 44px;
+    width: 44px;
+}
+
+
+

@@ -1,0 +1,127 @@
+@font-face {
+    font-family: inter;
+    src: url(../letra/Inter-VariableFont_slnt\,wght.ttf);
+}
+
+:root{
+    --tipo--fuente:inter;
+    --tamaño--texto: 18px;
+    --color--fondo:rgba(244, 244, 244, 1);
+    --color--encabezado:rgba(7, 96, 16, 1);
+    --color--blanco:#ffff;
+    --boton-ingresar:rgba(70, 175, 81, 1);
+    --color--gris: rgba(217, 217, 217, 1);
+    
+}
+
+.ingresar{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    height: 90vh;
+    justify-items: center;
+    align-items: center;
+}
+
+.logo_apli{
+    width: 370px;
+    height: 570px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.logo_login{
+    height: 344px;
+    width: 344px;
+    padding-bottom: 30px;
+}
+
+.Nombre_login{
+    font-size: 64px;
+    font-weight: 800;
+}
+
+.texto_login{
+    font-size: 20px;
+}
+
+
+.center{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+
+.datos_logeo{
+    background-color: var(--color--gris);
+    width: 463px;
+    height: 428px;
+    border-radius: 46px;
+    gap: 25px;
+    
+}
+
+.ingresa_login{
+    width: 373px;
+    height: 44px;
+    background-color: var(--color--blanco);
+    border: none;
+    margin-top: 16px;
+    border-radius: 10px;
+    padding: 12px;
+    color: rgb(134, 134, 134);
+    
+}
+
+.boton{
+    width: 373px;
+    height: 44px;
+    border-radius: 10px;
+    background-color: var(--boton-ingresar);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: var(--color--blanco);
+}
+
+.boton_registro{
+    background-color: var(--boton-ingresar);
+    opacity: 50%;
+    width: 178px;
+}
+
+.boton__olvidar{
+    background-color: var(--color--gris);
+    padding-top: 15px;
+    color: #000;
+    font-size: 14px;
+    font-weight: 700;
+    margin-top: 16px;
+    display: flex;
+    align-items: center;
+}
+
+hr{
+    width: 100%;
+    height: 1px;
+    background-color: #000;
+    opacity: 50%;
+}
+
+.boton:hover {
+    background-color: rgba(70, 175, 81, 0.8); /* Cambiar color al pasar el mouse */
+}
+
+.boton_registro:hover {
+    background-color: rgba(70, 175, 81, 0.8); /* Cambiar color al pasar el mouse */
+}
+
+.boton__olvidar:hover {
+    background-color: rgb(255, 255, 255);
+    opacity: 50%;
+    color: #000000; /* Cambiar color de texto al pasar el mouse */
+}
