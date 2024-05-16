@@ -16,7 +16,8 @@
     --tamaño--texto: 18px;
     --color--fondo:rgba(244, 244, 244, 1);
     --color--encabezado:rgba(7, 96, 16, 1);
-    --color--blanco:#ffff
+    --color--blanco:#ffff;
+    --color--gris: rgba(217, 217, 217, 1);
     
 }
 
@@ -51,5 +52,46 @@ background-color: var(--color--encabezado);
     width: 44px;
 }
 
+.boton_salir {
+    background-color: transparent; /* Hacer el botón transparente */
+    border: none; /* Quitar el borde */
+    cursor: pointer; /* Cambiar el cursor al pasar sobre el botón */
+    padding: 0; /* Quitar el relleno */
+    font-size: 44px; /* Tamaño del ícono */
+    color: var(--color--gris); /* Color del ícono */
+}
+
+.boton_salir:hover{
+    color: var(--color--blanco);
+    border-radius: 10px;
+    background-color: rgb(17, 128, 7);
+}
+
+.encabezado__lista{
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    list-style: none;
+    font-weight: 200;
+    font-size: 14px;
+    align-items: center;
+    
+}
+
+.encabezado__lista--texto {
+    text-decoration: none;
+    color: var(--color--blanco);
+    padding: 10px 5px;
+    border-radius: 10px;
+}
+
+.encabezado__lista--texto:hover {
+    background-color: rgb(17, 128, 7);
+
+}
+
+.encabezado__lista--icono{
+    font-size: 35px;
+}
 
 

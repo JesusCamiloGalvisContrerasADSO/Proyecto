@@ -14,6 +14,8 @@
     
 }
 
+
+/* todos estos son los datos que se utilizan en el login, algunos se reutilizaran para el registro  */
 .ingresar{
     display: grid;
     grid-template-columns: repeat(2,1fr);
@@ -64,7 +66,7 @@
     
 }
 
-.ingresa_login{
+.input_ingresar{
     width: 373px;
     height: 44px;
     background-color: var(--color--blanco);
@@ -86,6 +88,7 @@
     align-items: center;
     text-decoration: none;
     color: var(--color--blanco);
+    border: none;
 }
 
 .boton_registro{
@@ -113,15 +116,86 @@ hr{
 }
 
 .boton:hover {
-    background-color: rgba(70, 175, 81, 0.8); /* Cambiar color al pasar el mouse */
+    background-color: rgba(70, 175, 81, 0.8); 
 }
 
 .boton_registro:hover {
-    background-color: rgba(70, 175, 81, 0.8); /* Cambiar color al pasar el mouse */
+    background-color: rgba(70, 175, 81, 0.8); 
 }
 
 .boton__olvidar:hover {
     background-color: rgb(255, 255, 255);
     opacity: 50%;
-    color: #000000; /* Cambiar color de texto al pasar el mouse */
+    color: #000000; 
+}
+
+/* algunos cambios que se tuvieron que implementar para que el registro se viera bien 
+
+*/
+
+.input_registro{
+    width: 460px;
+    height: 44px;
+    background-color: var(--color--blanco);
+    border: none;
+    margin-bottom: 16px;
+    border-radius: 10px;
+    padding: 12px;
+    color: rgb(134, 134, 134);
+    
+    
+}
+
+.registro{
+    height: auto;
+    width: 930px;
+    background-color: var(--color--gris);
+    margin: 40px;
+    border-radius: 15px;
+
+}
+
+.registro__linea{
+    margin: 20px;
+}
+
+.registro__titulo{
+    font-size: 48px;
+    font-weight: 200;
+    margin-top: 30px;
+    
+}
+
+.registro__input{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    font-size: 14px;
+    gap: 6px;
+}
+
+.registro__input--seleccion, .registro__input--cuadro{
+    flex-direction: row;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    margin: 10px 0 10px 0;
+    
+}
+
+.input_registro--seleccion{
+    width: 68px;
+    height: 44px;
+    background-color: var(--color--blanco);
+    border: none;
+    border-radius: 10px;
+    padding: 12px;
+    color: rgb(134, 134, 134);
+}
+
+.boton__registro{
+    margin: 20px;
+    width: 460px;
 }
