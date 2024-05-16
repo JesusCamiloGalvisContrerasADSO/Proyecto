@@ -4,28 +4,47 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Olvidaste tu contraseña</title>
+    <link rel="stylesheet" href="../css/style_header.css">
+    <link rel="stylesheet" href="../css/style_login.css">
+
 </head>
 <body>
     <!-- este es el encabezado de la pagina -->
-    <header>
-        <div>
-            <div>
-                <button><i class="bi bi-chevron-left"></i></button>
-            </div>
-            <div>
-                <img src="logo/logo-BoviControl.svg" alt="">
-                <p>BoviControl</p>
-            </div>
+    <header class=" fondo_header">
+      <div class="container encabezado">
+    
+        <div class="encabezado">
+          <button class="boton_salir"><i class="bi bi-chevron-left"></i></button>
+          <img class="logo" src="../Recursos/logo/logo-BoviControl.svg" alt="">
+          <p>BoviControl</p>
         </div>
+        <div class="encabezado">
+          <ul class="encabezado__lista">
+            <li><a class="encabezado__lista--texto" href="../Ingresar.html">Ingresar</a></li>
+            <li class="encabezado__lista--icono"><i class="bi bi-person-circle"></i></li>
+          </ul>
+        </div>
+      </div>
     </header>
     <section>
-        <div>
+        <div class="container center">
             <div>
                 <h1>¿Olvidaste tu contraseña?</h1>
             </div>
             <div>
                 <p>Enviar mensaje a:</p>
-                <input type="checkbox" name="" value="numero de telefono">
+                <!-- <td valign="top" class="_k1 _9o4f"><label>
+                    <div class="uiInputLabel clearfix uiInputLabelLegacy"><input type="radio" id="send_email" name="recover_method"
+                        value="send_email" class="uiInputLabelInput uiInputLabelRadio"><label for="send_email"
+                        class="uiInputLabelLabel">
+                        <div class="marginLeft12px">
+                          <div class="_9o1x marginBottom4px">Enviar código por correo electrónico</div>
+                          <div class="_9o1y">
+                            <div>l***@*******</div>
+                          </div>
+                        </div>
+                      </label></div>
+                  </label></td> -->
                 <input type="checkbox" name="" value="email">
                 <p>Se enviará un código de verificación para comprobar que eres tú.</p>
             </div>
@@ -36,3 +55,7 @@
     </section>
 </body>
 </html>
+
+
+
+
