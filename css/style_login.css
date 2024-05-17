@@ -1,18 +1,3 @@
-@font-face {
-    font-family: inter;
-    src: url(../letra/Inter-VariableFont_slnt\,wght.ttf);
-}
-
-:root{
-    --tipo--fuente:inter;
-    --tamaño--texto: 18px;
-    --color--fondo:rgba(244, 244, 244, 1);
-    --color--encabezado:rgba(7, 96, 16, 1);
-    --color--blanco:#ffff;
-    --boton-ingresar:rgba(70, 175, 81, 1);
-    --color--gris: rgba(217, 217, 217, 1);
-    
-}
 
 
 /* todos estos son los datos que se utilizan en el login, algunos se reutilizaran para el registro  */
@@ -92,14 +77,15 @@
 }
 
 .boton_registro{
-    background-color: var(--boton-ingresar);
-    opacity: 50%;
+
     width: 178px;
+    background-color: var(--verde--opcaidad); /* con esto se puede colocar opacidad solo al color */
+
 }
 
 .boton__olvidar{
     background-color: var(--color--gris);
-    padding-top: 15px;
+
     color: #000;
     font-size: 14px;
     font-weight: 700;
@@ -133,6 +119,10 @@ hr{
 
 */
 
+.registro__fondo{
+  padding: 40px;
+}
+
 .input_registro{
     width: 460px;
     height: 44px;
@@ -150,10 +140,10 @@ hr{
     height: auto;
     width: 930px;
     background-color: var(--color--gris);
-    margin: 40px;
     border-radius: 15px;
 
 }
+
 
 .registro__linea{
     margin: 20px;
@@ -198,4 +188,53 @@ hr{
 .boton__registro{
     margin: 20px;
     width: 460px;
+}
+
+
+/* se agregar ulgunos estilos al css para que funcione el olvidaste tu contraseña */
+
+.tamaño_fondo--olvidar{
+  height: 90vh;
+  display: flex;
+  align-items: center;
+}
+
+.olvidar{
+  height: 640px;
+  width: 770px;
+  background-color: var(--color--gris);
+  gap: 40px;
+  border-radius: 20px;
+}
+
+.olvidar__contenedores{
+
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+
+.olvidar__contenedores--subtitulo{
+  font-size: 24px;
+  font-weight: 300;
+
+} 
+
+.seleccion__cuadro{
+    display: grid;
+    grid-template-columns: 50px 300px;
+    text-align: start;
+    align-items: center;
+    height: 50px;
+}
+
+.olvidar__boton--radio{
+  height: 24px;
+}
+
+.seleccion__texto{
+  display: flex;
+  flex-direction: row;
+  gap: 15px;
 }

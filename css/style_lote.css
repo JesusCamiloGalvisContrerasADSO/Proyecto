@@ -1,0 +1,30 @@
+
+
+/* aqui se va a trabajar los estilos de la vista de los lotes  */
+
+.fondo__cinta{
+  background-color: var(--color--gris__oscuro);
+}
+
+.cinta__opciones{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  height: 109px;
+  gap: 50px;
+}
+
+.cinta__logo{
+  height: 90px;
+  width: 90px;
+}
+
+.Titulo{
+  font-size: var(--tamaño--titulos__grandes);
+  font-weight: 500 ;
+}
+
+.linea__lote{
+  height: 12px;
+  background-color: var(--verde--opcaidad);
+}

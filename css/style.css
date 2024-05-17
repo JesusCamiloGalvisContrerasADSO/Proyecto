@@ -1,0 +1,27 @@
+@import url(style_header.css);
+@import url(style_login.css);
+@import url(style_lote.css);
+
+@font-face {
+    font-family: inter;
+    src: url(../letra/Inter-VariableFont_slnt\,wght.ttf);
+}
+
+*{
+    margin: 0;
+    padding: none;
+    box-sizing: border-box;
+}
+
+:root{
+    --tipo--fuente:inter;
+    --tamaño--texto: 18px;
+    --color--fondo:rgba(244, 244, 244, 1);
+    --color--encabezado:rgba(7, 96, 16, 1);
+    --color--blanco:#ffff;
+    --boton-ingresar:rgba(70, 175, 81, 1);
+    --color--gris: rgba(217, 217, 217, 1);
+    --color--gris__oscuro: rgba(232, 232, 232, 1);
+    --tamaño--titulos__grandes: 40px;
+    --verde--opcaidad:rgba(7, 96, 16, 0.33);
+}

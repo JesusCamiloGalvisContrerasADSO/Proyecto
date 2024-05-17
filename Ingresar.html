@@ -1,11 +1,11 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>login</title>
-    <link rel="stylesheet" href="css/style_header.css">
-    <link rel="stylesheet" href="css/style_login.css">
+    <title>Inicia sección</title>
+    <link rel="stylesheet" href="css/style.css">
+    
 </head>
 <body>
     <!-- este es el encabezado de la pagina -->
@@ -18,40 +18,42 @@
         </div>
     </header>
     <!-- este es el cuerpo del aplicativo web -->
-    <section>
-        <div class="container ingresar">
-            <!-- aqui se realizaron dos div, uno es el que corresponde al logo, nombre y eslogan y el otro corresponde a los datos donde se valida para ingresar  -->
-            <div class="logo_apli">
-                <img class="logo_login" src="Recursos/logo/logo-BoviControl.svg" alt="">
-                <p class="Nombre_login">BoviControl</p>
-                <p class="Texto_login">Control de pesos en ganado bovino</p>
-            </div>
-            <div class="datos_logeo center">
-                <div class="center">
-                    <!-- seccion de seleccion multiple -->
-                    <select class="input_ingresar" name="" id="">
-                        <option value="">Selecciona el tipo de documento</option>
-                        <option value="">Cedula de ciudadania</option>
-                        <option value="">Tarjeta de identidad</option>
-                        <option value="">Cedula extranjeria</option>
-                    </select>
-                    <!-- ingresar numero de documento y contraseña  -->
-                    <input class="input_ingresar" placeholder="Ingresa el numero de documento" type="number">
-                    <input class="input_ingresar" placeholder="Ingresa tu contraseña" type="password">
-                </div>
-                <!-- botones de ingreso, olvido contraseña o registrarse  -->
-                <div class="center">
-                    <a class="boton" href="">Ingresar</a>
-                    <a class="boton boton__olvidar " href="">¿Olvidaste tu contraseña?</a>
-                </div>
-                <hr>
-                
-                <div>
-                    <a class="boton boton_registro" href="registro/Registro.html">Registrarse</a>
-                </div>
-            </div>
-        </div>
-    </section>
+    <main>
+      <section>
+          <div class="container ingresar">
+              <!-- aqui se realizaron dos div, uno es el que corresponde al logo, nombre y eslogan y el otro corresponde a los datos donde se valida para ingresar  -->
+              <div class="logo_apli">
+                  <img class="logo_login" src="Recursos/logo/logo-BoviControl.svg" alt="">
+                  <p class="Nombre_login">BoviControl</p>
+                  <p class="Texto_login">Control de pesos en ganado bovino</p>
+              </div>
+              <div class="datos_logeo center">
+                  <div class="center">
+                      <!-- seccion de seleccion multiple -->
+                      <select class="input_ingresar" name="" id="">
+                          <option value="">Selecciona el tipo de documento</option>
+                          <option value="">Cedula de ciudadania</option>
+                          <option value="">Tarjeta de identidad</option>
+                          <option value="">Cedula extranjeria</option>
+                      </select>
+                      <!-- ingresar numero de documento y contraseña  -->
+                      <input class="input_ingresar" placeholder="Ingresa el numero de documento" type="number">
+                      <input class="input_ingresar" placeholder="Ingresa tu contraseña" type="password">
+                  </div>
+                  <!-- botones de ingreso, olvido contraseña o registrarse  -->
+                  <div class="center">
+                      <a class="boton" href="Vista_usuario/vista_lote.html">Ingresar</a>
+                      <a class="boton boton__olvidar " href="Olvidar_contra/olvi_contra.html">¿Olvidaste tu contraseña?</a>
+                  </div>
+                  <hr>
+                  
+                  <div>
+                      <a class="boton boton_registro" href="registro/Registro.html">Registrarse</a>
+                  </div>
+              </div>
+          </div>
+      </section>
+    </main>
     
 </body>
 </html>

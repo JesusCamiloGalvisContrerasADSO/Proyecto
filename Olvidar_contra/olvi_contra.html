@@ -1,11 +1,12 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Olvidaste tu contraseña</title>
-    <link rel="stylesheet" href="../css/style_header.css">
-    <link rel="stylesheet" href="../css/style_login.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="../css/style.css">
+    
 
 </head>
 <body>
@@ -21,38 +22,69 @@
         <div class="encabezado">
           <ul class="encabezado__lista">
             <li><a class="encabezado__lista--texto" href="../Ingresar.html">Ingresar</a></li>
+            <li><a class="encabezado__lista--texto" href="../registro/Registro.html">Registrarse</a></li>
             <li class="encabezado__lista--icono"><i class="bi bi-person-circle"></i></li>
           </ul>
         </div>
       </div>
     </header>
-    <section>
-        <div class="container center">
-            <div>
-                <h1>¿Olvidaste tu contraseña?</h1>
-            </div>
-            <div>
-                <p>Enviar mensaje a:</p>
-                <!-- <td valign="top" class="_k1 _9o4f"><label>
-                    <div class="uiInputLabel clearfix uiInputLabelLegacy"><input type="radio" id="send_email" name="recover_method"
-                        value="send_email" class="uiInputLabelInput uiInputLabelRadio"><label for="send_email"
-                        class="uiInputLabelLabel">
-                        <div class="marginLeft12px">
-                          <div class="_9o1x marginBottom4px">Enviar código por correo electrónico</div>
-                          <div class="_9o1y">
-                            <div>l***@*******</div>
-                          </div>
+    <!-- aqui se va a trabajar el codigo para enviar la contraseña por medio de correo o telefono, y pues el boton de continuar  -->
+    <main>
+      <section class="tamaño_fondo--olvidar" >
+          <div class="container center olvidar ">
+              <div>
+                  <h1 class="registro__titulo">¿Olvidaste tu contraseña?</h1>
+                  <hr class="registro__linea">
+                </div>
+              <div class="olvidar__contenedores">
+                <div>
+                  <p class="olvidar__contenedores--subtitulo">Enviar contraseña a:</p>
+  
+                </div>
+                  <div class="olvidar__seleccion center">
+  
+                    <td valign="top" ><label>
+                        <div class="seleccion__cuadro">
+                          <input class="olvidar__boton--radio" type="radio"  name="recover_method" value="send_numero" >
+                            <label >
+                            <div class="seleccion__texto">
+                              <div >Teléfono:</div>
+                              <div >
+                                <div><!--texto--></div> 
+                              </div>
+                            </div>
+                          </label>
                         </div>
-                      </label></div>
-                  </label></td> -->
-                <input type="checkbox" name="" value="email">
-                <p>Se enviará un código de verificación para comprobar que eres tú.</p>
-            </div>
-            <div>
-                <button>Continuar</button>
-            </div>
-        </div>
-    </section>
+                      </label>
+                    </td>
+  
+                    <td valign="top">
+                      <label>
+                        <div class="seleccion__cuadro">
+                          <input class="olvidar__boton--radio" type="radio" name="recover_method" value="send_email">
+                          <label >
+                            <div class="seleccion__texto">
+                              <div>Email:</div>
+                              <div>
+                                <div><!--texto--></div>
+                              </div>
+                            </div>
+                          </label>
+                        </div>
+                      </label>
+                    </td>
+                  </div>
+                  <div>
+                    <p>Se enviará un mensaje con la contraseña, vuelve a iniciar sesión.</p>
+                  </div>
+                  
+              </div>
+              <div>
+                  <button class="boton boton__registro boton__olvidar--continuar">Continuar</button>
+              </div>
+          </div>
+      </section>
+    </main>
 </body>
 </html>
 
