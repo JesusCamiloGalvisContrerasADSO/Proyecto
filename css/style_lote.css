@@ -47,16 +47,40 @@
   width: 12px;
 }
 
+/* aqui esta la linea de las separaciones de los lotes*/
+
 .linea__datos{
   width: 90%;
   margin: auto;
 }
 
+/* datos que tiene el lote  */
 
 .Datos__lote{
   display: flex;
   justify-content: space-between;
+  align-items: flex-end;
   margin: 25px auto;
   text-decoration: none;
   color: #000;
+}
+
+.boton__lote{
+  height: 50px;
+  width: 100px;
+  background-color: var(--verde--lote);
+  font-size: 20px;
+}
+
+.Datos__lote--numero{
+  display: flex;
+  flex-direction: row;
+  gap: 100px;
+}
+
+.Datos__lote--texto{
+  display: flex;
+  gap: 8px;
+  flex-direction: column;
+  font-size: 14px;
 }
