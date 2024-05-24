@@ -10,8 +10,16 @@
   display: flex;
   flex-direction: row;
   align-items: center;
+  justify-content: space-between;
   height: 109px;
-  gap: 50px;
+}
+
+.cinta__opciones--titulo{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+    gap: 50px;
 }
 
 .cinta__logo{
@@ -19,7 +27,7 @@
   width: 90px;
 }
 
-.Titulo{
+.cinta__Titulo{
   font-size: var(--tamaño--titulos__grandes);
   font-weight: 500 ;
 }
@@ -28,6 +36,11 @@
   height: 12px;
   background-color: var(--verde--opcaidad);
   margin: 0;
+}
+
+.cinta__iconos{
+  color: #000000;
+  
 }
 
 /* aqui voy a trabajar el titulo de lo que se ve y el contenido que lleve  */
