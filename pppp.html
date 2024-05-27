@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bovicontrol</title>
+    <link rel="stylesheet" href="pppp.css">
+</head>
+<body>
+    <header class="header">
+        <div class="header-left">
+            <button class="back-button">&larr;</button>
+            <h1>Bovicontrol</h1>
+        </div>
+        <div class="header-right">
+            <button class="user-button">👤</button>
+        </div>
+    </header>
+
+    <main>
+        <section class="control-panel">
+            <h2>Lote 1</h2>
+            <p>Última actualización 12/05/24</p>
+            <div class="control-actions">
+                <input type="text" placeholder="Número" class="search-input">
+                <button class="control-button" id="delete-button">Eliminar</button>
+                <button class="control-button" id="add-button">Agregar</button>
+                <button class="control-button">Pendiente</button>
+            </div>
+        </section>
+
+        <table class="data-table">
+            <thead>
+                <tr>
+                    <th>Número animal</th>
+                    <th>Raza</th>
+                    <th>Sexo/tipo</th>
+                    <th>Peso anterior</th>
+                    <th>Peso nuevo</th>
+                    <th>Ganancia</th>
+                    <th>Fecha revisión</th>
+                    <th>Fecha de venta</th>
+                    <th>Historias clínicas</th>
+                </tr>
+            </thead>
+            <tbody id="animal-table-body">
+                <tr>
+                    <td>001</td>
+                    <td>Brahman</td>
+                    <td>Macho</td>
+                    <td>325 KG</td>
+                    <td>345 KG</td>
+                    <td>20 KG</td>
+                    <td>Última actualización 12/05/24</td>
+                    <td>Última actualización 12/05/24</td>
+                    <td><button class="history-button">Historia Clínica</button></td>
+                </tr>
+                <!-- More rows as needed -->
+            </tbody>
+        </table>
+
+        <!-- Formulario para agregar nuevo animal -->
+        <section class="add-animal-form" id="add-animal-form" style="display: none;">
+            <h2>Agregar Nuevo Animal</h2>
+            <form id="new-animal-form">
+                <label for="numero">Número:</label>
+                <input type="text" id="numero" name="numero" required><br>
+
+                <label for="raza">Raza:</label>
+                <input type="text" id="raza" name="raza" required><br>
+
+                <label for="sexo">Sexo/Tipo:</label>
+                <input type="text" id="sexo" name="sexo" required><br>
+
+                <label for="pesoAnterior">Peso Anterior:</label>
+                <input type="text" id="pesoAnterior" name="pesoAnterior" required><br>
+
+                <label for="pesoNuevo">Peso Nuevo:</label>
+                <input type="text" id="pesoNuevo" name="pesoNuevo" required><br>
+
+                <label for="ganancia">Ganancia:</label>
+                <input type="text" id="ganancia" name="ganancia" required><br>
+
+                <label for="fechaRevision">Fecha Revisión:</label>
+                <input type="text" id="fechaRevision" name="fechaRevision" required><br>
+
+                <label for="fechaVenta">Fecha Venta:</label>
+                <input type="text" id="fechaVenta" name="fechaVenta" required><br>
+
+                <button type="submit">Agregar</button>
+            </form>
+        </section>
+    </main>
+
+    <script src="ppp.js"></script>
+</body>
+</html>
+

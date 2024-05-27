@@ -200,7 +200,7 @@ hr{
 }
 
 .olvidar{
-  height: 640px;
+  /* height: 640px; */
   width: 770px;
   background-color: var(--color--gris);
   gap: 40px;

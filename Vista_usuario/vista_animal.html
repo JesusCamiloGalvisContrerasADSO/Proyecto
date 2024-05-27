@@ -1,39 +1,105 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="../css/style.css">
 </head>
 <body>
     <!-- este es el encabezado de la pagina -->
-    <header>
-        <div>
-            <div>
-                <div>
-                    <button><i class="bi bi-chevron-left"></i></button>
-                </div>
-                <div>
-                    <img src="logo/logo-BoviControl.svg" alt="">
-                    <p>BoviControl</p>
-                </div>
-            </div>
-            <div>
-                <ul>
-                    <li>lotes</li>
-                    <li><i class="bi bi-person-circle"></i></li>
-                </ul>
-            </div>
+    <header class=" fondo_header">
+        <div class="container encabezado">
+      
+          <div class="encabezado">
+            <img class="logo" src="../Recursos/logo/logo-BoviControl.svg" alt="">
+            <p>BoviControl</p>
+          </div>
+          <div class="encabezado">
+            <ul class="encabezado__lista">
+                <li><a class="encabezado__lista--texto" href="vista_lote.html">Lotes</a></li>
+              <li><a class="encabezado__lista--texto" href="">Usuario</a></li>
+              
+              <li class="encabezado__lista--icono"><i class="bi bi-person-circle"></i></li>
+            </ul>
+          </div>
         </div>
-    </header>
+      </header>
     <!-- este es el cuerpo de la pagina  -->
     <main>
-        <section>
-            <div>
-                <img src="../Recursos/vaquita.svg" alt="">
-                <p>Lotes de ganado</p>
+        <section class="fondo__cinta">
+            <div class="cinta__opciones container cinta__animal">
+              <div class="cinta__opciones--titulo cinta__opciones--animal">
+                <div>
+                  <img class="cinta__logo" src="../Recursos/vaquita.svg" alt="">
+                </div>
+                <div>
+                  <p class="cinta__Titulo">001</p>
+                </div>
+                <hr class="cinta__linea--divisora">
+                <div class="cinta__fechaCambios">
+                    <p>Ultima actualización</p>
+                    <p>12/02/2024</p>
+                </div>
+                <hr class="cinta__linea--divisora">
+                <div>
+                    <form class="opciones__buscador" action="">
+                        <input class="opciones__buscador--input" type="search" class="" placeholder="Buscar" autoco   mplete="off" ><!-- react-empty: 118 -->
+                        <button class="opciones__buscador--icono"><i class="bi bi-search"></i></button>
+                    </form>
+                </div>
+                <hr class="cinta__linea--divisora">
+                <div>
+                  <ul class="opciones__botones opciones__botones--espacio">
+                    <li>
+                      <button class="opciones__botones--boton modificar__animal"><i class="modificar__animal--direccion bi bi-trash"> <p class="modificar__animal--texto">Eliminar</p></i></button>
+                    </li>
+                    <li>
+                      <button class="opciones__botones--boton modificar__animal"><i class="modificar__animal--direccion bi bi-plus"> <p class="modificar__animal--texto">Agregar</p> </i></button>
+                    </li>
+                    <li>
+                      <button class="opciones__botones--boton modificar__animal modificar__animal--direccion"><div class="modificar__animal--circulo"></div><p class="modificar__animal--texto">Pendiente</p></button>
+                    </li>
+                    <li>
+                      <button class="opciones__botones--boton"><i class="bi bi-floppy2-fill"></i></button>
+                    </li>
+                  </ul>
+                </div>
+              </div>
             </div>
+            <hr class="linea__cinta ">
+        </section>
+        <section class="container">
+            <table class="data-table">
+                <thead>
+                    <tr>
+                        <th>Número animal</th>
+                        <th>Raza</th>
+                        <th>Sexo/tipo</th>
+                        <th>Peso anterior</th>
+                        <th>Peso nuevo</th>
+                        <th>Ganancia</th>
+                        <th>Fecha revisión</th>
+                        <th>Fecha de venta</th>
+                        <th>Historias clínicas</th>
+                    </tr>
+                </thead>
+                <tbody id="animal-table-body">
+                    <tr>
+                        <td>001</td>
+                        <td>Brahman</td>
+                        <td>Macho</td>
+                        <td>325 KG</td>
+                        <td>345 KG</td>
+                        <td>20 KG</td>
+                        <td>Última actualización 12/05/24</td>
+                        <td>Última actualización 12/05/24</td>
+                        <td><button class="history-button">Historia Clínica</button></td>
+                    </tr>
+                    <!-- More rows as needed -->
+                </tbody>
+            </table>
         </section>
     </main>
 </body>
