@@ -76,3 +76,15 @@ background-color: var(--color--encabezado);
 }
 
 
+/* aqui empezamos a hacer el responsive del programa, lo hicimos destok fistr ahora lo pasaremos a mobile  */
+
+
+@media (max-width: 430px) {
+    .ingresar {
+        display: grid;
+        grid-template-columns: none;
+        height: 90vh;
+        justify-items: center;
+        align-items: center;
+    }
+}
