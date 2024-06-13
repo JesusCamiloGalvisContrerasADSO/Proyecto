@@ -1,85 +1,78 @@
-
 /* en este documento se va a trabajar todo el estilo que tenga el header  */
 
-
-body{
-    font-family:var(--tipo--fuente) ;
-    font-size:var(--tamaño--texto);
-    background-color: var(--color--fondo);
+body {
+  font-family: var(--tipo--fuente);
+  font-size: var(--tamaño--texto);
+  background-color: var(--color--fondo);
 }
 
-.container{
-    max-width: 1200px;
-    margin: 0 auto;
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
-.fondo_header{
-background-color: var(--color--encabezado);
-
+.fondo_header {
+  background-color: var(--color--encabezado);
 }
 
-.encabezado{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    gap: 26px;
-    height: 60px;
-    color: var(--color--blanco);
-    font-weight: 600;
+.encabezado {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 26px;
+  height: 60px;
+  color: var(--color--blanco);
+  font-weight: 600;
 }
 
-.logo{
-    height: 44px;
-    width: 44px;
+.logo {
+  height: 44px;
+  width: 44px;
 }
 
 .boton_salir {
-    background-color: transparent; /* Hacer el botón transparente */
-    border: none; /* Quitar el borde */
-    cursor: pointer; /* Cambiar el cursor al pasar sobre el botón */
-    padding: 0; /* Quitar el relleno */
-    font-size: 44px; /* Tamaño del ícono */
-    color: var(--color--gris); /* Color del ícono */
+  background-color: transparent; /* Hacer el botón transparente */
+  border: none; /* Quitar el borde */
+  cursor: pointer; /* Cambiar el cursor al pasar sobre el botón */
+  padding: 0; /* Quitar el relleno */
+  font-size: 44px; /* Tamaño del ícono */
+  color: var(--color--gris); /* Color del ícono */
 }
 
-.boton_salir:hover{
-    color: var(--color--blanco);
-    border-radius: 10px;
-    background-color: rgb(17, 128, 7);
+.boton_salir:hover {
+  color: var(--color--blanco);
+  border-radius: 10px;
+  background-color: rgb(17, 128, 7);
 }
 
-.encabezado__lista{
-    display: flex;
-    flex-direction: row;
-    gap: 30px;
-    list-style: none;
-    font-weight: 200;
-    font-size: 14px;
-    align-items: center;
-    
+.encabezado__lista {
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+  list-style: none;
+  font-weight: 200;
+  font-size: 14px;
+  align-items: center;
 }
 
 .encabezado__lista--texto {
-    text-decoration: none;
-    color: var(--color--blanco);
-    padding: 10px 5px;
-    border-radius: 10px;
+  text-decoration: none;
+  color: var(--color--blanco);
+  padding: 10px 5px;
+  border-radius: 10px;
 }
 
 .encabezado__lista--texto:hover {
-    background-color: rgb(17, 128, 7);
-
+  background-color: rgb(17, 128, 7);
 }
 
-.encabezado__lista--icono{
-    font-size: 35px;
+.encabezado__lista--icono {
+  font-size: 35px;
 }
-
 
 /* aqui empezamos a hacer el responsive del programa, lo hicimos destok fistr ahora lo pasaremos a mobile  */
 
-
-@media (max-width: 430px) {
+/* @media (max-width: 430px) {
     .ingresar {
         display: grid;
         grid-template-columns: none;
@@ -87,4 +80,4 @@ background-color: var(--color--encabezado);
         justify-items: center;
         align-items: center;
     }
-}
+} */
