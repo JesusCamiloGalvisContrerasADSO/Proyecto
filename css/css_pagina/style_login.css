@@ -37,10 +37,12 @@
   justify-content: center;
   text-align: center;
   align-items: center;
+
 }
 
+
 .datos_logeo {
-  background-color: var(--color--gris);
+  background-color: var(--amarillo--pollito);
   width: 463px;
   height: 428px;
   border-radius: 15px;
@@ -79,7 +81,7 @@
 }
 
 .boton__olvidar {
-  background-color: var(--color--gris);
+  background: transparent;
 
   color: #000;
   font-size: 14px;
@@ -132,7 +134,7 @@ hr {
 .registro {
   height: auto;
   width: 930px;
-  background-color: var(--color--gris);
+  background-color: var(--amarillo--pollito);
   border-radius: 15px;
 }
 
@@ -180,6 +182,17 @@ hr {
   width: 460px;
 }
 
+/* aqui voy a trabajar la pagina donde confirma que el registro se realizo con exito  */
+.registro__comfir{
+  height: 90vh;
+}
+
+.registro__comfir--container{
+  height: 500px;
+}
+
+
+
 /* se agregar ulgunos estilos al css para que funcione el olvidaste tu contraseña */
 
 .tamaño_fondo--olvidar {
@@ -191,7 +204,7 @@ hr {
 .olvidar {
   /* height: 640px; */
   width: 770px;
-  background-color: var(--color--gris);
+  background-color: var(--amarillo--pollito);
   gap: 40px;
   border-radius: 20px;
 }
@@ -230,7 +243,7 @@ hr {
 }
 
 /* Media query para dispositivos móviles */
-@media (max-width: 430px) {
+@media (max-width: 768px) {
   .ingresar {
     display: flex;
     flex-direction: column;
