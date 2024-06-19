@@ -2,9 +2,9 @@
 
 /* aqui se va a trabajar los estilos de la vista de los lotes  */
 
-.fondo__cinta{
-  background-color: var(--color--gris__oscuro);
-}
+/* .fondo__cinta{
+  background-color: var(--color--gris);
+} */
 
 .cinta__opciones{
   display: flex;
@@ -88,6 +88,7 @@
 .Datos__lote--numero{
   display: flex;
   flex-direction: row;
+  align-items: center;
   gap: 100px;
 }
 
@@ -203,7 +204,7 @@ gap: 20px;
 .data-table {
   width: 100%;
   border-collapse: collapse;
-  font-family: Arial, sans-serif;
+  /* font-family: Arial, sans-serif; */
 }
 
 /* Estilos para el encabezado de la tabla */
@@ -214,7 +215,7 @@ gap: 20px;
 
 .data-table thead th {
   padding: 12px; /* Espaciado dentro de las celdas del encabezado */
-  text-align: left; /* Alineación del texto del encabezado */
+  text-align: center; /* Alineación del texto del encabezado */
   border: 1px solid #ddd; /* Borde alrededor de las celdas del encabezado */
 }
 
@@ -231,7 +232,7 @@ gap: 20px;
 /* Estilos para las celdas de la tabla */
 .data-table tbody td {
   padding: 12px; /* Espaciado dentro de las celdas */
-  text-align: left; /* Alineación del texto de las celdas */
+  text-align: center; /* Alineación del texto de las celdas */
   border: 1px solid #ddd; /* Borde alrededor de las celdas */
 }
 
@@ -252,4 +253,35 @@ gap: 20px;
 
 .history-button:hover {
   background-color: #45a049; /* Color de fondo al pasar el cursor */
+}
+.container{
+  width: 90%;
+}
+.lista{
+  display: none;
+}
+
+@media (max-width: 768px){
+  /* inicio con la @media de la vista lote  */
+  .cinta__logo, .opciones__botones, .Datos__lote--tipo{
+    display: none;
+  }
+  
+  .Datos__lote--numero{
+    gap: 20px;
+  }
+  .Datos__lote--texto2{
+    width: 140px;
+    font-weight: 600;
+    color: var(--color--encabezado);
+  }
+}
+
+@media (max-width: 1310px){
+  .opciones__botones--espacio, .animal__datos{
+    display: none;
+  }
+  .lista{
+    display: block;
+  }
 }

@@ -42,7 +42,7 @@
 
 
 .datos_logeo {
-  background-color: var(--amarillo--pollito);
+  background-color: var(--fondo--contenedor);
   width: 463px;
   height: 428px;
   border-radius: 15px;
@@ -124,17 +124,24 @@ hr {
   width: 460px;
   height: 44px;
   background-color: var(--color--blanco);
-  border: none;
+  border: solid 0.1px var(--color--gris);
   margin-bottom: 16px;
   border-radius: 10px;
   padding: 12px;
   color: rgb(134, 134, 134);
 }
 
+.input_registro:focus {
+  outline: none; 
+  border: solid 1px var(--verde--lote);
+    
+  box-shadow: 0 0 5px rgba(52, 152, 219, 0.5);
+} 
+
 .registro {
   height: auto;
-  width: 930px;
-  background-color: var(--amarillo--pollito);
+  width: 80%;
+  background-color: var(--fondo--contenedor);
   border-radius: 15px;
 }
 
@@ -143,9 +150,10 @@ hr {
 }
 
 .registro__titulo {
-  font-size: 48px;
-  font-weight: 200;
+  font-size: 42px;
+  font-weight: 700;
   margin-top: 30px;
+  color: var(--color--gris__oscuro);
 }
 
 .registro__input {
@@ -156,26 +164,6 @@ hr {
   gap: 6px;
 }
 
-.registro__input--seleccion,
-.registro__input--cuadro {
-  flex-direction: row;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  gap: 15px;
-  margin: 10px 0 10px 0;
-}
-
-.input_registro--seleccion {
-  width: 68px;
-  height: 44px;
-  background-color: var(--color--blanco);
-  border: none;
-  border-radius: 10px;
-  padding: 12px;
-  color: rgb(134, 134, 134);
-}
 
 .boton__registro {
   margin: 20px;
@@ -204,9 +192,10 @@ hr {
 .olvidar {
   /* height: 640px; */
   width: 770px;
-  background-color: var(--amarillo--pollito);
+  background-color: var(--fondo--contenedor);
   gap: 40px;
   border-radius: 20px;
+  padding: 0 15px;
 }
 
 .olvidar__contenedores {
@@ -244,6 +233,7 @@ hr {
 
 /* Media query para dispositivos móviles */
 @media (max-width: 768px) {
+  
   .ingresar {
     display: flex;
     flex-direction: column;
@@ -274,4 +264,39 @@ hr {
   .input_ingresar {
     border: solid 0.5px var(--color--gris);
   }
+
+  /* aqui estan los @media del registro  */
+
+  .registro, .registro__linea {
+    
+    width:90%;
+    
+  }
+
+  .input_registro, .boton__registro{
+    width: 300px;
+  }
+
+  .encabezado__lista{
+    display: none;
+  }
+  .registro__fondo {
+    padding: 40px 0;
+}
+
+  /* aqui manejamos el olvidar contraseña  */
+  .espaciador{
+      padding: 10px;
+  }
+
+   .espaciador__recuperar{
+    margin: 50px 0px;
+      padding: 10px;
+  }
+
+  .tamaño_fondo--olvidar {
+    height: auto;
+    
+}
+
 }

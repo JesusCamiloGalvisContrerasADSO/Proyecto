@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Registro</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../../css/style.css">
     
 </head>
 <body>
@@ -15,12 +15,12 @@
             
             <div class="encabezado">
                 <button class="boton_salir"><i class="bi bi-chevron-left"></i></button>
-                <img class="logo" src="../Recursos/logo/logo-BoviControl.svg" alt="">
+                <img class="logo" src="../../Recursos/logo/logo-BoviControl.svg" alt="">
                 <p>BoviControl</p>
             </div>
             <div class="encabezado">
                 <ul class="encabezado__lista">
-                    <li ><a class="encabezado__lista--texto" href="../Ingresar.html">Ingresar</a></li>
+                    <li><a class="encabezado__lista--texto" href="../../Index.html">Ingresar</a></li>
                     <li class="encabezado__lista--icono"><i class="bi bi-person-circle"></i></li>
                 </ul>
             </div>
@@ -47,7 +47,30 @@
                       <p>Ingresa tu documento:</p>
                       <input class="input_registro" type="text">
                   </div>
-                  <div class="registro__input--seleccion">
+                  <div class="registro__input">
+                    <p>Tipo de documento:</p>
+                          <select class="input_registro" name="" id="">
+                              <option value=""></option>
+                              <option value="">Cedula de ciudadania</option>
+                              <option value="">Tarjeta de identidad</option>
+                              <option value="">Cedula extranjeria</option>
+                          </select>
+                  </div>
+                  <div class="registro__input">
+                    <p>Tipo de sangre:</p>
+                          <select class="input_registro" name="" id="">
+                              <option value=""></option>
+                              <option value="">A +</option>
+                              <option value="">O +</option>
+                              <option value="">B +</option>
+                              <option value="">AB +</option>
+                              <option value="">A -</option>
+                              <option value="">O -</option>
+                              <option value="">B -</option>
+                              <option value="">AB -</option>
+                          </select>
+                  </div>
+                  <!-- <div class="registro__input--seleccion">
                       <div class=" registro__input--cuadro registro__input">
                           <p>Tipo de documento:</p>
                           <select class="input_registro--seleccion" name="" id="">
@@ -71,7 +94,7 @@
                               <option value="">AB -</option>
                           </select>
                       </div>
-                  </div>
+                  </div> -->
                   <div class="registro__input">
                       <p>Teléfono:</p>
                       <input class="input_registro" type="number">

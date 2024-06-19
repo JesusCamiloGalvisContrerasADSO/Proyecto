@@ -6,11 +6,6 @@ body {
   background-color: var(--color--fondo);
 }
 
-.container {
-  max-width: 1200px;
-  margin: 0 auto;
-}
-
 .fondo_header {
   background-color: var(--color--encabezado);
 }
@@ -69,15 +64,3 @@ body {
 .encabezado__lista--icono {
   font-size: 35px;
 }
-
-/* aqui empezamos a hacer el responsive del programa, lo hicimos destok fistr ahora lo pasaremos a mobile  */
-
-/* @media (max-width: 430px) {
-    .ingresar {
-        display: grid;
-        grid-template-columns: none;
-        height: 90vh;
-        justify-items: center;
-        align-items: center;
-    }
-} */
