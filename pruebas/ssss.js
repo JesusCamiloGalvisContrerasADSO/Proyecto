@@ -6,3 +6,5 @@ document.addEventListener("DOMContentLoaded", function() {
         menu.classList.toggle('active');
     });
 });
+
+let hola = "hola";

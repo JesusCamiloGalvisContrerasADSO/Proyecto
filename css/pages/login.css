@@ -73,6 +73,18 @@
   border: none;
 }
 
+.boton:hover {
+  background-color: rgba(70, 175, 81, 0.8);
+}
+
+.boton__usuario{
+  display:inline-grid;
+  grid-template-columns: repeat(2,1fr);
+  gap: 10px;
+  width: 100%;
+  margin-right: 20px;
+}
+
 .boton_registro {
   width: 178px;
   background-color: var(
@@ -80,15 +92,25 @@
   ); /* con esto se puede colocar opacidad solo al color */
 }
 
-.boton__olvidar {
-  background: transparent;
+.boton_registro:hover {
+  background-color: rgba(70, 175, 81, 0.8);
+}
 
+.boton__olvidar, .boton--modificador {
+  background: transparent;
   color: #000;
   font-size: 14px;
   font-weight: 700;
   margin-top: 16px;
   display: flex;
+  width: auto;
   align-items: center;
+}
+
+.boton__olvidar:hover, .boton--modificador:hover {
+  background-color: rgb(255, 255, 255);
+  opacity: 50%;
+  color: #000000;
 }
 
 hr {
@@ -96,21 +118,11 @@ hr {
   height: 1px;
   background-color: #000;
   opacity: 50%;
+  margin: 20px;
 }
 
-.boton:hover {
-  background-color: rgba(70, 175, 81, 0.8);
-}
 
-.boton_registro:hover {
-  background-color: rgba(70, 175, 81, 0.8);
-}
 
-.boton__olvidar:hover {
-  background-color: rgb(255, 255, 255);
-  opacity: 50%;
-  color: #000000;
-}
 
 /* algunos cambios que se tuvieron que implementar para que el registro se viera bien 
 
@@ -131,7 +143,7 @@ hr {
   color: rgb(134, 134, 134);
 }
 
-.input_registro:focus {
+.input_registro:focus, .input_ingresar:focus {
   outline: none; 
   border: solid 1px var(--verde--lote);
     
@@ -232,7 +244,7 @@ hr {
 }
 
 /* Media query para dispositivos móviles */
-@media (max-width: 768px) {
+@media (max-width: 880px) {
   
   .ingresar {
     display: flex;
