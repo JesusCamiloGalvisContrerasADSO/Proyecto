@@ -25,13 +25,15 @@ body {
   width: 44px;
 }
 
-.boton_salir {
-  background-color: transparent; /* Hacer el botón transparente */
-  border: none; /* Quitar el borde */
-  cursor: pointer; /* Cambiar el cursor al pasar sobre el botón */
-  padding: 0; /* Quitar el relleno */
-  font-size: 44px; /* Tamaño del ícono */
-  color: var(--color--gris); /* Color del ícono */
+.boton_salir {    
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  height: 44px;
+  width: 44px;
+  font-size: 24px;
+  color: var(--color--gris);
 }
 
 .boton_salir:hover {

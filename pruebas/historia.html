@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Registro de Control de Animales</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+    }
+
+    .container {
+      width: 90%;
+      margin: 20px auto;
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-template-rows: auto;
+      gap: 10px;
+    }
+
+    .section {
+      border: 1px solid #ddd;
+      padding: 10px;
+      position: relative;
+    }
+
+    .section-title {
+      background-color: #f2f2f2;
+      padding: 10px;
+      font-weight: bold;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin: -10px -10px 10px -10px;
+    }
+
+    .section-title button {
+      background-color: #4CAF50;
+      color: white;
+      border: none;
+      padding: 5px 10px;
+      cursor: pointer;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-bottom: 20px;
+    }
+
+    th,
+    td {
+      border: 1px solid #ddd;
+      padding: 8px;
+      text-align: left;
+    }
+
+    th {
+      background-color: #f2f2f2;
+    }
+
+    .description {
+      padding: 10px;
+      border: 1px solid #ddd;
+      margin-top: -20px;
+    }
+
+    .sub-table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+
+    .sub-table th,
+    .sub-table td {
+      border: none;
+      padding: 4px;
+      text-align: left;
+    }
+
+    .enfermedades-container {
+      grid-column: span 3;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <div class="section">
+      <div class="section-title">
+        <span>Suplementos</span>
+        <button>+</button>
+      </div>
+      <div>
+        <p>Se le implemento melasa y sales mineralizadas para que el animal muestre mas ganancias de peso y un mejor
+          desempeño</p>
+      </div>
+    </div>
+
+    <div class="section">
+      <div class="section-title">
+        <span>Control de peso</span>
+        <button>+</button>
+      </div>
+      <table>
+        <thead>
+          <tr>
+            <th>Numero de registro</th>
+            <th>Peso en Kg</th>
+            <th>Fecha del control</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>1</td>
+            <td>300 KG</td>
+            <td>12/05/24</td>
+          </tr>
+          <tr>
+            <td>2</td>
+            <td>300 KG</td>
+            <td>12/05/24</td>
+          </tr>
+          <tr>
+            <td>3</td>
+            <td>300 KG</td>
+            <td>12/05/24</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="section">
+      <div class="section-title">
+        <span>Descripcion</span>
+        <button>✏️</button>
+      </div>
+      <div class="description">
+        Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha sido el
+        texto de relleno estándar de las industrias desde el año 1500
+      </div>
+    </div>
+
+    <div class="section enfermedades-container">
+      <div class="section-title">
+        <span>Enfermedades</span>
+        <button>+</button>
+      </div>
+      <table>
+        <thead>
+          <tr>
+            <th>Numero</th>
+            <th>Enfermedad</th>
+            <th>Tratamiento</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>1</td>
+            <td>fiebre aftosa</td>
+            <td>
+              <table class="sub-table">
+                <tr>
+                  <td>1</td>
+                  <td>Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum
+                    ha sido el texto de relleno estándar de las industrias desde el año 1500</td>
+                </tr>
+                <tr>
+                  <td>2</td>
+                  <td>Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum
+                    ha sido el texto de relleno estándar de las industrias desde el año 1500</td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</body>
+
+</html>

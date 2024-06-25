@@ -267,15 +267,29 @@ hr {
 
   div.datos_logeo.center {
     height: auto;
-    padding: 14px;
+    padding: var(--padding);
     width: auto;
     background-color: var(--color--fondo);
     border: solid 0.1px var(--color--gris);
-    margin: 0 auto;
+    
   }
   .input_ingresar {
     border: solid 0.5px var(--color--gris);
   }
+  .boton__usuario{
+    display: flex;
+    margin: 0;
+    justify-content: space-between;
+    padding: var(--padding);
+    margin:0 var(--margen);
+  }
+
+  .input_ingresar, .boton--ingresar{
+    width: 0px;
+    min-width: 350px;
+    max-width: 373px;
+  }
+
 
   /* aqui estan los @media del registro  */
 
@@ -312,3 +326,4 @@ hr {
 }
 
 }
+

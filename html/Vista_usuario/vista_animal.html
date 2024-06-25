@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>Animales</title>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
   <link rel="stylesheet" href="../../css/style.css">
 </head>
@@ -15,6 +15,7 @@
     <div class="container encabezado">
 
       <div class="encabezado">
+        <button class="boton_salir"><i class="bi bi-chevron-left"></i></button>
         <img class="logo" src="../../Recursos/logo/logo-BoviControl.svg" alt="">
         <p>BoviControl</p>
       </div>
@@ -39,12 +40,12 @@
           <div>
             <p class="cinta__Titulo">001</p>
           </div>
-          <hr class="cinta__linea--divisora">
+          <hr class="cinta__linea--divisora ">
           <div class="cinta__fechaCambios">
             <p>Ultima actualización</p>
             <p>12/02/2024</p>
           </div>
-          <hr class="cinta__linea--divisora">
+          <hr class="cinta__linea--divisora linea--celular">
           <div>
             <form class="opciones__buscador" action="">
               <input class="opciones__buscador--input" type="search" class="" placeholder="Buscar" autoco
@@ -54,6 +55,7 @@
           </div>
           <hr class="cinta__linea--divisora">
           <div>
+            <!-- botones de interaccion de la pagina  -->
             <ul class="opciones__botones opciones__botones--espacio">
               <li>
                 <button class="opciones__botones--boton modificar__animal"><i
@@ -78,7 +80,7 @@
               </li>
             </ul>
             <div>
-              <button class="opciones__botones--boton lista"><i class="bi bi-list"></i></button>
+              <a class="opciones__botones--boton lista"><i class="bi bi-list"></i></a>
             </div>
           </div>
         </div>
@@ -90,25 +92,25 @@
         <thead>
           <tr>
             <th>Número animal</th>
-            <th>Raza</th>
-            <th>Sexo/tipo</th>
-            <th class="animal__datos">Peso anterior</th>
+            <th class="animal--movil">Raza</th>
+            <th class="animal--movil">Sexo/tipo</th>
+            <th class="animal--tablet">Peso anterior</th>
             <th>Peso nuevo</th>
-            <th class="animal__datos">Ganancia</th>
-            <th class="animal__datos">Fecha revisión</th>
+            <th class="animal--tablet">Ganancia</th>
+            <th class="animal--tablet">Fecha revisión</th>
             <th>Historias clínicas</th>
           </tr>
         </thead>
         <tbody id="animal-table-body">
           <tr>
             <td>001</td>
-            <td>Brahman</td>
-            <td>Macho</td>
-            <td class="animal__datos">325 KG</td>
+            <td class="animal--movil">Brahman</td>
+            <td class="animal--movil">Macho</td>
+            <td class="animal--tablet">325 KG</td>
             <td>345 KG</td>
-            <td class="animal__datos">20 KG</td>
-            <td class="animal__datos">Última actualización 12/05/24</td>
-            <td><button class="history-button">Historia Clínica</button></td>
+            <td class="animal--tablet">20 KG</td>
+            <td class="animal--tablet">Última actualización 12/05/24</td>
+            <td><a href="historia_clinica.html"><button class="history-button">Historia Clínica</button></a></td>
           </tr>
           <!-- More rows as needed -->
         </tbody>

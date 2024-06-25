@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Historia clinica</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <link rel="stylesheet" href="../../css/style.css">
+</head>
+
+<body>
+  <!-- este es el encabezado de la pagina -->
+  <header class=" fondo_header">
+    <div class="container encabezado">
+
+      <div class="encabezado">
+        <button class="boton_salir"><i class="bi bi-chevron-left"></i></button>
+        <img class="logo" src="../../Recursos/logo/logo-BoviControl.svg" alt="">
+        <p>BoviControl</p>
+      </div>
+      <div class="encabezado">
+        <ul class="encabezado__lista">
+          <li><a class="encabezado__lista--texto" href="vista_lote.html">Lotes</a></li>
+          <li><a class="encabezado__lista--texto" href="">Usuario</a></li>
+
+          <li class="encabezado__lista--icono"><i class="bi bi-person-circle"></i></li>
+        </ul>
+      </div>
+    </div>
+  </header>
+  <!-- este es el cuerpo de la pagina  -->
+  <main>
+    <section class="fondo__cinta">
+      <div class="cinta__opciones container cinta__animal">
+        <div class="cinta__opciones--titulo cinta__opciones--animal">
+          <div>
+            <img class="cinta__logo" src="../../Recursos/vaquita.svg" alt="">
+          </div>
+          <div>
+            <p class="cinta__Titulo">Lote 1</p>
+          </div>
+          <hr class="cinta__linea--divisora ">
+          <div>
+            <p class="cinta__Titulo--2">Animal: 001</p>
+          </div>
+          <hr class="cinta__linea--divisora ">
+          <div class="cinta__fechaCambios">
+            <p>Ultima actualización</p>
+            <p>12/02/2024</p>
+          </div>
+          <hr class="cinta__linea--divisora linea--celular">
+          <div class="opciones--HistoriaBtn">
+            <div>
+              <button class="opciones__botones--boton modificar__animal modificar__animal--direccion">
+                <input type="checkbox">
+                <p class="modificar__animal--texto">Pendiente</p>
+              </button>
+            </div>
+            <!-- botones de interaccion de la pagina  -->
+            <ul class="opciones__botones opciones__botones--espacio">
+              <li>
+                <button class="opciones__botones--boton modificar__animal"><i
+                    class="modificar__animal--direccion bi bi-trash">
+                  </i></button>
+              </li>
+              
+              
+              <li>
+                <button class="opciones__botones--boton"><i class="bi bi-floppy2-fill"></i></button>
+              </li>
+            </ul>
+            <div>
+              <a class="opciones__botones--boton lista"><i class="bi bi-list"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <hr class="linea__cinta ">
+    </section>
+
+    <section>
+      <div class="container">
+        <div class="seccion">
+          <div class="seccion__titulo">
+            <span>Suplementos</span>
+            <button class="seccion__titulo-btn">+</button>
+          </div>
+          <div>
+            <p>Se le implemento melasa y sales mineralizadas para que el animal muestre más ganancias de peso y un mejor
+              desempeño</p>
+          </div>
+        </div>
+    
+        <div class="seccion">
+          <div class="seccion__titulo">
+            <span>Control de peso</span>
+            <button class="seccion__titulo-btn">+</button>
+          </div>
+          <table class="tabla">
+            <thead>
+              <tr>
+                <th class="tabla__encabezado">Numero de registro</th>
+                <th class="tabla__encabezado">Peso en Kg</th>
+                <th class="tabla__encabezado">Fecha del control</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="tabla__celda">1</td>
+                <td class="tabla__celda">300 KG</td>
+                <td class="tabla__celda">12/05/24</td>
+              </tr>
+              <tr>
+                <td class="tabla__celda">2</td>
+                <td class="tabla__celda">300 KG</td>
+                <td class="tabla__celda">12/05/24</td>
+              </tr>
+              <tr>
+                <td class="tabla__celda">3</td>
+                <td class="tabla__celda">300 KG</td>
+                <td class="tabla__celda">12/05/24</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+    
+        <div class="seccion">
+          <div class="seccion__titulo">
+            <span>Descripcion</span>
+            <button class="seccion__titulo-btn"><i class="bi bi-pencil-square"></i></button>
+          </div>
+          <div class="descripcion">
+            Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha sido el
+            texto de relleno estándar de las industrias desde el año 1500
+          </div>
+        </div>
+    
+        <div class="seccion enfermedades-container">
+          <div class="seccion__titulo">
+            <span>Enfermedades</span>
+            <button class="seccion__titulo-btn">+</button>
+          </div>
+          <table class="tabla">
+            <thead>
+              <tr>
+                <th class="tabla__encabezado">Numero</th>
+                <th class="tabla__encabezado">Enfermedad</th>
+                <th class="tabla__encabezado">Tratamiento</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="tabla__celda">1</td>
+                <td class="tabla__celda">fiebre aftosa</td>
+                <td class="tabla__celda">
+                  <table class="sub-tabla">
+                    <tr>
+                      <td class="sub-tabla__celda">1</td>
+                      <td class="sub-tabla__celda">Lorem Ipsum es simplemente el texto de relleno de las imprentas y
+                        archivos de texto. Lorem Ipsum ha sido el texto de relleno estándar de las industrias desde el año
+                        1500</td>
+                    </tr>
+                    <tr>
+                      <td class="sub-tabla__celda">2</td>
+                      <td class="sub-tabla__celda">Lorem Ipsum es simplemente el texto de relleno de las imprentas y
+                        archivos de texto. Lorem Ipsum ha sido el texto de relleno estándar de las industrias desde el año
+                        1500</td>
+                    </tr>
+                  </table>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+  </main>
+</body>
+
+</html>

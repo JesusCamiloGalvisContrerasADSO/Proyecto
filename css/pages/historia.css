@@ -1,0 +1,75 @@
+/* estilos de la vista de historia clinica */
+.cinta__Titulo--2{
+  font-weight: 700;
+  font-size: 24px;
+}
+
+.opciones--HistoriaBtn{
+  display: inline-flex;
+  align-items: center;
+  gap: 40px;
+}
+
+
+.seccion {
+  border: 1px solid #ddd;
+  padding: 10px;
+  position: relative;
+}
+
+.seccion__titulo {
+  background-color: #f2f2f2;
+  padding: 10px;
+  font-weight: bold;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: -10px -10px 10px -10px;
+}
+
+.seccion__titulo-btn {
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+.tabla {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+}
+
+.tabla__encabezado,
+.tabla__celda {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+}
+
+.tabla__encabezado {
+  background-color: #f2f2f2;
+}
+
+.descripcion {
+  padding: 10px;
+  border: 1px solid #ddd;
+  margin-top: -20px;
+}
+
+.sub-tabla {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.sub-tabla__encabezado,
+.sub-tabla__celda {
+  border: none;
+  padding: 4px;
+  text-align: left;
+}
+
+.enfermedades-container {
+  grid-column: span 3;
+}

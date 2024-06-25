@@ -278,10 +278,23 @@ gap: 20px;
 }
 
 @media (max-width: 1310px){
-  .opciones__botones--espacio, .animal__datos{
+  /* @media para movil de la vista animales  */
+  .opciones__botones--espacio, .animal--tablet{
     display: none;
   }
   .lista{
-    display: block;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    
+  }
+}
+
+@media (max-width: 680px){
+  .animal--movil, .opciones__buscador, .linea--celular{
+    display: none;
+  }
+  .cinta__opciones--animal{
+    gap: 10px;
   }
 }
