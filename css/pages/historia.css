@@ -1,4 +1,5 @@
 /* estilos de la vista de historia clinica */
+/* algunos ajustes para la cinta de opciones  */
 .cinta__Titulo--2{
   font-weight: 700;
   font-size: 24px;
@@ -10,29 +11,78 @@
   gap: 40px;
 }
 
+.modificar__animal--checked {
+  transition: 0.5s;
+  color: var(--color--blanco);
+  background-color: var(--color--rojo_alertaBoton);
+}
 
-.seccion {
+/* aqui ya empezamos con los ajustes para la vista de destok, datos del animal */
+
+.datos--historia{
+  margin-top: 30px;
+  display: grid;
+  grid-template-areas: 
+  "suple peso desc"
+  "enfer enfer desc";
+}
+
+.historia--peso{
+  grid-area: peso;
+}
+
+.historia--enfermedades{
+  grid-area: enfer;
+}
+
+.historia--suplementos{
+  grid-area: suple;
+}
+
+.historia--descripcion{
+  grid-area: desc;
+}
+
+.historia {
   border: 1px solid #ddd;
   padding: 10px;
   position: relative;
 }
 
-.seccion__titulo {
+
+/* aqui vamos a colocar las variables de las caractericsticas que va a manejar la historia clinica */
+
+.historia__titulo {
   background-color: #f2f2f2;
   padding: 10px;
   font-weight: bold;
+  text-align: center;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin: -10px -10px 10px -10px;
+  margin-bottom: 10px;
+  border-bottom: 2px solid var(--color--gris);
 }
 
-.seccion__titulo-btn {
-  background-color: #4CAF50;
+.historia__titulo-btn {
+  background-color: var(--boton-ingresar);
   color: white;
+  height: 44px;
+  width: 44px;
   border: none;
+  border-radius: 10px;
   padding: 5px 10px;
   cursor: pointer;
+  font-size: 20px;
+}
+
+.historia__titulo-btn:hover{
+  background-color: var(--verde--lote);
+}
+
+.suplementos--texto{
+  border-bottom: 1px solid var(--color--gris);
+  padding: 15px;
 }
 
 .tabla {
@@ -52,24 +102,60 @@
   background-color: #f2f2f2;
 }
 
-.descripcion {
-  padding: 10px;
-  border: 1px solid #ddd;
-  margin-top: -20px;
+.btn--tratamiento{
+  background-color: var(--color--encabezado);
 }
+
+.modificar--tratamiendto{
+   display: flex;
+   flex-direction: row;
+   align-items: center;
+   justify-content: space-between;
+}
+
 
 .sub-tabla {
   width: 100%;
   border-collapse: collapse;
 }
 
-.sub-tabla__encabezado,
 .sub-tabla__celda {
   border: none;
   padding: 4px;
   text-align: left;
+  border-bottom: 1px solid var(--color--gris);
+  padding: var(--padding);
 }
 
 .enfermedades-container {
-  grid-column: span 3;
+  grid-column: 3;
+}
+
+
+/* este es el @media para tablet */
+@media (max-width: 1010px){ 
+  .cinta__hist--ocultarTab{
+    display: none;
+  }
+}
+@media (max-width: 880px){ 
+  .datos--historia{
+    grid-template-areas: 
+    "suple peso"
+    "enfer enfer"
+    "desc desc";
+  }
+}
+
+/* este es para movile  */
+
+@media (max-width: 600px){
+  .datos--historia{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .cinta__hist--ocultarCel{
+    display: none;
+  }
 }

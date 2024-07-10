@@ -38,22 +38,22 @@
             <img class="cinta__logo" src="../../Recursos/vaquita.svg" alt="">
           </div>
           <div>
-            <p class="cinta__Titulo">Lote 1</p>
+            <p class="cinta__Titulo cinta__hist--ocultarCel">Lote 1</p>
           </div>
-          <hr class="cinta__linea--divisora ">
+          <hr class="cinta__linea--divisora cinta__hist--ocultarCel ">
           <div>
             <p class="cinta__Titulo--2">Animal: 001</p>
           </div>
-          <hr class="cinta__linea--divisora ">
-          <div class="cinta__fechaCambios">
+          <hr class="cinta__linea--divisora cinta__hist--ocultarTab ">
+          <div class="cinta__fechaCambios cinta__hist--ocultarTab">
             <p>Ultima actualización</p>
             <p>12/02/2024</p>
           </div>
           <hr class="cinta__linea--divisora linea--celular">
           <div class="opciones--HistoriaBtn">
             <div>
-              <button class="opciones__botones--boton modificar__animal modificar__animal--direccion">
-                <input type="checkbox">
+              <button class="opciones__botones--pendiente modificar__animal modificar__animal--direccion">
+                <input type="checkbox" class="modificar__animal--checkbox">
                 <p class="modificar__animal--texto">Pendiente</p>
               </button>
             </div>
@@ -80,22 +80,23 @@
     </section>
 
     <section>
-      <div class="container">
-        <div class="seccion">
-          <div class="seccion__titulo">
+      <div class="container datos--historia">
+
+        <div class="historia historia--suplementos">
+          <div class="historia__titulo">
             <span>Suplementos</span>
-            <button class="seccion__titulo-btn">+</button>
+            <button class="historia__titulo-btn">+</button>
           </div>
-          <div>
-            <p>Se le implemento melasa y sales mineralizadas para que el animal muestre más ganancias de peso y un mejor
+          <div >
+            <p class="suplementos--texto">Se le implemento melasa y sales mineralizadas para que el animal muestre más ganancias de peso y un mejor
               desempeño</p>
           </div>
         </div>
-    
-        <div class="seccion">
-          <div class="seccion__titulo">
+        
+        <div class="historia historia--peso">
+          <div class="historia__titulo">
             <span>Control de peso</span>
-            <button class="seccion__titulo-btn">+</button>
+            <button class="historia__titulo-btn">+</button>
           </div>
           <table class="tabla">
             <thead>
@@ -124,29 +125,24 @@
             </tbody>
           </table>
         </div>
-    
-        <div class="seccion">
-          <div class="seccion__titulo">
-            <span>Descripcion</span>
-            <button class="seccion__titulo-btn"><i class="bi bi-pencil-square"></i></button>
-          </div>
-          <div class="descripcion">
-            Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha sido el
-            texto de relleno estándar de las industrias desde el año 1500
-          </div>
-        </div>
-    
-        <div class="seccion enfermedades-container">
-          <div class="seccion__titulo">
+
+        <div class="historia historia--enfermedades">
+          <div class="historia historia__titulo">
             <span>Enfermedades</span>
-            <button class="seccion__titulo-btn">+</button>
+            <button class="historia__titulo-btn">+</button>
           </div>
           <table class="tabla">
             <thead>
               <tr>
                 <th class="tabla__encabezado">Numero</th>
                 <th class="tabla__encabezado">Enfermedad</th>
-                <th class="tabla__encabezado">Tratamiento</th>
+                <th class="tabla__encabezado modificar--tratamiendto">
+                  <div>
+                    Tratamiento
+                  </div>
+                  <div>
+                    <button class="historia__titulo-btn btn--tratamiento">+</button>
+                  </div></th>
               </tr>
             </thead>
             <tbody>
@@ -173,9 +169,21 @@
             </tbody>
           </table>
         </div>
+
+        <div class="historia historia--descripcion">
+          <div class="historia__titulo">
+            <span>Descripcion</span>
+            <button class="historia__titulo-btn"><i class="bi bi-pencil-square"></i></button>
+          </div>
+          <div class="descripcion">
+            Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha sido el
+            texto de relleno estándar de las industrias desde el año 1500
+          </div>
+        </div>
       </div>
     </section>
   </main>
+  <script src="../../css/pages/interacciones/pendiente.js"></script>
 </body>
 
 </html>

@@ -106,7 +106,7 @@
   list-style: none;
 }
 
-.opciones__botones--boton{
+.opciones__botones--boton,.opciones__botones--pendiente {
   height: 44px;
   width: 44px;
   font-size: 24px;
@@ -114,6 +114,11 @@
   border-radius: 10px;
   border:solid 1px #adadad;
   background-color:var(--botones--interaccion) ;
+  transition: 0.5s;
+}
+
+.opciones__botones--boton:hover{
+  background-color: var(--color--gris--hover);
 }
 
 /* aqui voy a trabajar algunos cambios que se deben agregar cuando se ingresa a la vista animal */
@@ -298,3 +303,5 @@ gap: 20px;
     gap: 10px;
   }
 }
+
+
