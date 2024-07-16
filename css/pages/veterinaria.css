@@ -1,0 +1,55 @@
+
+/* aqui se van a realizar los respectivos cambios de la pagina */
+
+.opciones__buscador{
+    padding: 8px;
+}
+
+.opciones__buscador:focus{
+    outline: none;
+    border: none;
+}
+
+.buscador__veterinaria{
+    width: 40%;
+}
+
+.ingresar--buscador{
+    width: 100%;
+}
+
+.Veterinaria__texto{
+    padding: 30px 0;
+}
+
+.Veterinaria__enfer{
+    transition: 0.8s;
+}
+
+.Veterinaria__enfer:hover, .Veterinaria__enfer:active{
+    background-color: var(--color--gris);
+    border-radius: 10px;
+    padding: 8px;
+}
+
+.Veterinaria__enfer--titulo{
+    color: var(--boton-ingresar);
+    font-size: 24px;
+    font-weight: 800;
+}
+
+.Veterinaria__enfer--texto{
+    color: var(--color--gris__oscuro);
+    font-weight: 500;
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+.Veterinaria__enfer--enlace{
+    color: var(--boton-ingresar);
+    font-size: 16px;
+}
+
+.Veterinaria__linea{
+    margin: 30px 0 ;
+}
