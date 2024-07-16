@@ -52,6 +52,11 @@
 
 /* aqui vamos a colocar las variables de las caractericsticas que va a manejar la historia clinica */
 
+.tabla {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
 .historia__titulo {
   background-color: #f2f2f2;
   padding: 10px;
@@ -85,11 +90,6 @@
   padding: 15px;
 }
 
-.tabla {
-  width: 100%;
-  border-collapse: collapse;
-  margin-bottom: 20px;
-}
 
 .tabla__encabezado,
 .tabla__celda {
@@ -102,15 +102,22 @@
   background-color: #f2f2f2;
 }
 
+.tabla_container--enfer {
+  overflow-x: auto; /* Habilita el scroll horizontal */
+  border: 1px solid #ddd; /* Opcional: agrega un borde al contenedor */
+  margin-bottom: 20px; /* Espacio entre la tabla y el siguiente elemento */
+}
+
 .btn--tratamiento{
   background-color: var(--color--encabezado);
 }
 
 .modificar--tratamiendto{
-   display: flex;
-   flex-direction: row;
-   align-items: center;
-   justify-content: space-between;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  min-width: 400px;
 }
 
 
@@ -130,6 +137,7 @@
 .enfermedades-container {
   grid-column: 3;
 }
+
 
 
 /* este es el @media para tablet */

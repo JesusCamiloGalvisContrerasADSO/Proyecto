@@ -152,7 +152,7 @@ hr {
 
 .registro {
   height: auto;
-  width: 80%;
+  padding: 20px;
   background-color: var(--fondo--contenedor);
   border-radius: 15px;
 }
@@ -294,9 +294,7 @@ hr {
   /* aqui estan los @media del registro  */
 
   .registro, .registro__linea {
-    
     width:90%;
-    
   }
 
   .input_registro, .boton__registro{
