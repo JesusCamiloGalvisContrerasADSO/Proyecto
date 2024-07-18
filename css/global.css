@@ -3,9 +3,9 @@
     margin: 0;
     padding: none;
     box-sizing: border-box;
-  }
-  
-  :root {
+}
+
+:root {
     --tipo--fuente: "Raleway", sans-serif;
     --tamaño--texto: 18px;
     --color--fondo: rgba(244, 244, 244, 1);
@@ -26,13 +26,14 @@
     --color--rojo_alertaBoton: rgba(145, 0, 0, 0.808);
     --padding: 10px;
     --margen: 10px;
-  }
-  
+}
+
     
 
 body {
     font-family: var(--tipo--fuente);
-    
+    font-size: var(--tamaño--texto);
+    background-color: var(--color--fondo);
 }
 
 .container {

@@ -1,11 +1,5 @@
 /* en este documento se va a trabajar todo el estilo que tenga el header  */
 
-body {
-  font-family: var(--tipo--fuente);
-  font-size: var(--tamaño--texto);
-  background-color: var(--color--fondo);
-}
-
 .fondo_header {
   background-color: var(--color--encabezado);
 }
@@ -18,6 +12,7 @@ body {
   height: 60px;
   color: var(--color--blanco);
   font-weight: 600;
+  padding: 10px;
 }
 
 .logo {

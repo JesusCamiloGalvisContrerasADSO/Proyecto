@@ -18,6 +18,10 @@
     width: 100%;
 }
 
+.veterinaria{
+    padding: 10px;
+}
+
 .Veterinaria__texto{
     padding: 30px 0;
 }
@@ -52,4 +56,78 @@
 
 .Veterinaria__linea{
     margin: 30px 0 ;
+   
+}
+
+.Veterinaria__enfer--texto{
+    line-height: 25px;
+}
+
+.lista--tratamiento{
+    display: none;
+}
+@media (max-width: 1000px){
+    .lista--tratamiento{
+        display: flex;
+    }
+
+    .agregar--tratamiento, .guardar--tratamiento{
+        display: none;
+    }
+
+    .botones--tratamiento{
+        display: block;
+        
+    }
+    .ingresar--buscador{
+        display: flex;
+    }
+    
+}
+
+@media(max-width: 770px){
+    .cinta__opciones--titulo{
+        gap: 0;
+    }
+}
+
+
+@media ( max-width: 500px){
+    .cinta--veterinaria{
+        flex-direction: column;
+        align-items: center;
+        
+        height: auto;
+    }
+
+    .cinta--veterinaria{
+        display: grid;
+        gap: 20px 0;
+        padding: 10px;
+        grid-template-areas: 
+        "titulo lista"
+        "buscar buscar";
+    }
+
+    .vet--titulo{
+        grid-area: titulo;
+
+    }
+
+    .vet--menu{
+        grid-area: lista;
+    }
+
+
+    .buscador__veteri--modificar{
+        width: 90%;
+        grid-area: buscar;
+        margin: 0 auto;
+}
+
+    .cinta__opciones--titulo{
+        gap: 0px;
+    }
+
+    
 }

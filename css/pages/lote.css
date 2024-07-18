@@ -12,6 +12,7 @@
   align-items: center;
   justify-content: space-between;
   height: 109px;
+  padding: 10px;
 }
 
 .cinta__opciones--titulo{
