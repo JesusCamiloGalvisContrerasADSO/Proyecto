@@ -1,0 +1,35 @@
+.subtitulo--usuario{
+    font-size: var(--tamaño--26);
+    font-weight: 600;
+}
+
+.Datos__usuario{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 40px var(--padding) ;
+    
+}
+
+.usuario__seccion{
+    list-style: none;
+    display: flex;
+    gap: 30px;
+    flex-direction: column;
+}
+
+.usu__seccion--titulo{
+    font-size: 20px;
+    margin-bottom: 15px;
+    
+}
+
+.botones--usuario{
+    display: flex;
+}
+
+@media (max-width: 650px){
+    .Datos__usuario{
+        flex-direction: column;
+    }
+}
