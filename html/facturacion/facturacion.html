@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Veterinaria</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="../../css/style.css">
+</head>
+<body>
+    <!-- este es el header de la vista veterinaria  -->
+    <header class=" fondo_header">
+        <div class="container encabezado">
+            <div class="encabezado">
+                <img class="logo" src="../../Recursos/logo/logo-BoviControl.svg" alt="">
+                <p>BoviControl</p>
+            </div>
+            <div class="encabezado">
+                <ul class="encabezado__lista">
+                    <li><a class="encabezado__lista--texto" href="../Vista_usuario/vista_lote.html">lotes</a></li>
+                <li class="encabezado__lista--icono"><i class="bi bi-person-circle"></i></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="fondo__cinta">
+            <div class="cinta__opciones cinta--veterinaria container">
+                <div class="cinta__opciones--titulo">
+                    <h1 class="cinta__Titulo vet--titulo">PERIL</h1>
+                </div>
+                
+                <div class="menu">
+                    <ul class="opciones__botones botones--usuario">                        
+                        
+                        <li>
+                            <button class="opciones__botones--boton "><i class="bi bi-printer"></i></button>
+                        </li>
+                    </ul>
+                </div>
+                
+            </div>
+            <!-- <hr class="linea__cinta"> -->
+        </section>
+
+        <section>
+            <div class="facturacion__control container">
+              <div class="fac__formulario">
+                <div class="fac--selec--title">
+                  <div class="Tipo__vista--punto"></div>
+                  <label for="" class="Tipo__vista--texto subtitulo--usuario">Selecciona el lote</label>
+                </div>
+                <select class=" input_ingresar input--facturacion" name="" id="tipo_doc" >
+                  <option value=""></option>
+                  <option value="">lote 1</option>
+                  <option value="">lote 2</option>
+                  <option value="">lote 3</option>
+                </select>
+              </div>
+              <div class="fac__formulario">
+                <form action="">
+                  <label for="" class="texto--facturacion">Agregar quien despacha la factura (opcional)</label>
+                  <input class="input_ingresar input--facturacion" type="text">
+                </form>
+              </div>
+              <div class="fac__formulario">
+                <form action="">
+                  <label for="" class="texto--facturacion" >Agregar para quien va la factura (opcional)</label>
+                  <input class="input_ingresar input--facturacion" type="text">
+                </form>
+              </div>
+            </div>
+        </section>
+
+        <section>
+            
+        </section>
+    </main>
+</body>
+</html>

@@ -2,9 +2,9 @@
 
 /* aqui se va a trabajar los estilos de la vista de los lotes  */
 
-/* .fondo__cinta{
+.fondo__cinta{
   background-color: var(--color--gris);
-} */
+}
 
 .cinta__opciones{
   display: flex;

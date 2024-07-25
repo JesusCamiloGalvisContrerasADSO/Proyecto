@@ -1,0 +1,28 @@
+.facturacion__control{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: flex-end;
+  gap: 10px;
+  padding: 40px 10px;
+}
+
+.input--facturacion{
+  max-width: 300px;
+  margin: 5px;
+}
+
+.texto--facturacion{
+  font-size: 14px;
+}
+
+.fac--selec--title{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 15px;
+}
+
+.fac__formulario{
+  width: 320px;
+}
