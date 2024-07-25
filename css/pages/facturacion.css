@@ -26,3 +26,30 @@
 .fac__formulario{
   width: 320px;
 }
+
+/* aqui se va a desarrollar los estilos del la factura como tal  */
+
+.factura{
+  background-color: var(--color--blanco);
+  padding: 30px 90px;
+  width: 2480px;
+  height: auto;
+}
+
+.factura__encabezado{
+    height: 120px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo__factura{
+  font-size: 18px;
+  font-weight: 800;
+}
+
+.titulo__factura{
+  font-size: 25px;
+  width: 70%;
+  padding-left: 140px;
+}
