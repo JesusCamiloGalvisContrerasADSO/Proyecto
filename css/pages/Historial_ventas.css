@@ -1,0 +1,22 @@
+
+
+.lote--ventas{
+    background-color: var(--color--rojo_alertaBoton);
+}
+
+.lote--datos{
+    padding: 5px 0;
+
+}
+
+@media(max-width: 768px){
+    .cinta--ventas{
+        flex-direction: column;
+        gap: 10px;
+    }
+    
+    .Botones--Ventas{
+        display: flex;
+        padding: 0;
+    }
+}

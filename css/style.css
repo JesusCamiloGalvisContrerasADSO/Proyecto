@@ -7,5 +7,10 @@
 @import url(pages/vet_tratamiento.css);
 @import url(pages/usuario.css);
 @import url(pages/facturacion.css);
+@import url(pages/reportes.css);
+@import url(pages/estadisticas.css);
+@import url(pages/Historial_ventas.css);
+@import url(pages/editar_usuarios.css);
+
 
 @import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap");
