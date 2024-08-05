@@ -1,51 +1,40 @@
 
 
-.dot {
-    width: 10px;
-    height: 10px;
-    background-color: #FFA500;
-    border-radius: 50%;
-    margin-right: 10px;
-}
-
-.user {
-    display: flex;
-    justify-content: space-between;
-    border-bottom: 1px solid #ccc;
-    padding: 15px 0;
-}
-
-.user:last-child {
-    border-bottom: none;
-}
-
-.user-info, .contact-info, .address-info, .grade {
-    flex: 1;
-    display: flex;
-    align-items: center;
-}
-
-.user-info {
-    max-width: 20%;
-}
-
-.avatar {
-    width: 50px;
-    height: 50px;
-    background-color: #ddd;
-    border-radius: 50%;
-    margin-right: 10px;
-}
-
-.details p, .contact-info p, .address-info p, .grade p {
-    margin: 5px 0;
-}
-
-.grade {
-    justify-content: center;
-}
-
-.grade p {
+.table-container__header {
+    padding: 20px;
+    background-color: #f1f1f1;
+    margin: 0;
     font-size: 1.5em;
-    font-weight: bold;
+}
+
+.table-container__table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.table-container__row {
+    border-bottom: 1px solid #dddddd;
+}
+
+.table-container__cell--icon {
+    width: 60px;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.table-container__cell--icon img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+.table-container__cell {
+    padding: 10px;
+    vertical-align: top;
+}
+
+.table-container__cell--blood-type {
+    font-size: 1.2em;
+    text-align: center;
+    vertical-align: middle;
 }

@@ -1,9 +1,9 @@
 const ctx = document.getElementById('myPieChart').getContext('2d');
 const data = {
-    labels: [ 'Enfermos', 'Sanos',],
+    labels: [ 'Enfermos', 'Sanos', 'Muertos'],
     datasets: [{
-        data: [50 ,30],
-        backgroundColor: ['#ff6666', '#66ff66'],
+        data: [20 ,75, 5],
+        backgroundColor: ['#ff6666', '#66ff66', '#00000'],
     }]
 };
 
