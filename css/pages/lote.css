@@ -86,6 +86,25 @@
   font-size: 20px;
 }
 
+.num__lote{
+  display: flex;
+  gap: 20px;
+}
+
+.checkbox{
+  width: 20px;
+  
+}
+
+.checkbox:checked{
+  margin: auto 0;
+  height: 20px;
+  appearance: none;
+  border: solid 1px black;
+  border-radius: 5px;
+  background-color:var(--color--rojo_alertaBoton);
+}
+
 .Datos__lote--numero{
   display: flex;
   flex-direction: row;
