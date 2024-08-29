@@ -5,6 +5,7 @@
         <title>Lotes</title>
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
         <link rel="stylesheet" href="../css/style.css">
+        <link rel="stylesheet" href="listar.css">
     </head>
     <body>
         <header class=" fondo_header">
@@ -48,29 +49,118 @@
             </section>
             
             <section>
-                <div class="container tabla__listar">
-                    <table class="tabla__listar--datos" >
-                        <thead class="listar--cabecero">
-                            <tr>
-                                <th class="listar--datos">ID</th>
-                                <th class="listar--datos">Nombre</th>
-                                <th class="listar--datos">Acciones</th>
-                            </tr>
-                        </thead>
+                
+                <div class="container tabla__scroll">
+                    
+                    <table class="datos__persona">
                         
-                        <tbody>
-                            <tr class="listar--elementos">
-                                <td class="listar--datos">55</td>
-                                <td class="listar--datos">gg</td>
-                                <td class="listar--datos">
-                                    <a class="boton boton--listar" href="ControlTipSan?accion=editar&id=<%= Tipo.getId() %>">Editar</a>
-                                    <a class="boton boton--listar" href="ControlTipSan?accion=eliminar&id=<%= Tipo.getId() %>">Eliminar</a>
-                                </td>
-                            </tr>
-                           
-                        
+                        <tbody class="persona__usuario">
+                          <tr class="personas__fila listar--elementos">
+                            <td class="persona__dato persona--icono"><i class="bi bi-person-circle"></i></td>
+                            <td class="persona__dato">
+                              <p>Juan Fernando Hernandez Prada</p>
+                              <p><span class="persona--subTitulos"> Cedula de ciudadania: </span> 1092345345</p>
+                            </td>
+                            <td class="persona__dato">
+                              <p><span class="persona--subTitulos">Telefono: </span>  3209079545</p>
+                              <p><span class="persona--subTitulos">Email: </span> jgalviscontreras38@gmail.com</p>
+                            </td>
+                            <td class="persona__dato persona--sangre">A+</td>
+                            
+                            <td class="persona__dato">
+                                <span class="persona--subTitulos">Inicio de contrato:</span>
+                                <p>17/04/2024</p>
+                            </td>
+                            <td class="persona__dato">
+                                <span class="persona--subTitulos">Rol:</span>
+                                <p>Administrador</p>
+                            </td>
+
+                            <td class="persona__acciones">
+                                <button class="boton boton--editar" href="ControlUsuario?accion=editar&id=<%= Tipo.getIdUsuario() %>"><i class="bi bi-pencil"></i></button>
+                                <button class="boton boton--eliminar" href="ControlUsuario?accion=eliminar&id=<%= Tipo.getIdUsuario() %>"><i class="bi bi-trash3"></i></button>
+                            </td>
+                          </tr>
+                          <tr class="personas__fila listar--elementos">
+                            <td class="persona__dato persona--icono"><i class="bi bi-person-circle"></i></td>
+                            <td class="persona__dato">
+                              <p>Juan Fernando Hernandez Prada</p>
+                              <p><span class="persona--subTitulos"> Cedula de ciudadania: </span> 1092345345</p>
+                            </td>
+                            <td class="persona__dato">
+                              <p><span class="persona--subTitulos">Telefono: </span>  3209079545</p>
+                              <p><span class="persona--subTitulos">Email: </span> jgalviscontreras38@gmail.com</p>
+                            </td>
+                            <td class="persona__dato persona--sangre">A+</td>
+                            
+                            <td class="persona__dato">
+                                <span class="persona--subTitulos">Inicio de contrato:</span>
+                                <p>17/04/2024</p>
+                            </td>
+                            <td class="persona__dato">
+                                <span class="persona--subTitulos">Rol:</span>
+                                <p>Administrador</p>
+                            </td>
+
+                            <td class="persona__acciones">
+                                <button class="boton boton--editar" href="ControlUsuario?accion=editar&id=<%= Tipo.getIdUsuario() %>"><i class="bi bi-pencil"></i></button>
+                                <button class="boton boton--eliminar" href="ControlUsuario?accion=eliminar&id=<%= Tipo.getIdUsuario() %>"><i class="bi bi-trash3"></i></button>
+                            </td>
+                          </tr>
+                          <tr class="personas__fila listar--elementos">
+                            <td class="persona__dato persona--icono"><i class="bi bi-person-circle"></i></td>
+                            <td class="persona__dato">
+                              <p>Juan Fernando Hernandez Prada</p>
+                              <p><span class="persona--subTitulos"> Cedula de ciudadania: </span> 1092345345</p>
+                            </td>
+                            <td class="persona__dato">
+                              <p><span class="persona--subTitulos">Telefono: </span>  3209079545</p>
+                              <p><span class="persona--subTitulos">Email: </span> jgalviscontreras38@gmail.com</p>
+                            </td>
+                            <td class="persona__dato persona--sangre">A+</td>
+                            
+                            <td class="persona__dato">
+                                <span class="persona--subTitulos">Inicio de contrato:</span>
+                                <p>17/04/2024</p>
+                            </td>
+                            <td class="persona__dato">
+                                <span class="persona--subTitulos">Rol:</span>
+                                <p>Administrador</p>
+                            </td>
+
+                            <td class="persona__acciones">
+                                <button class="boton boton--editar" href="ControlUsuario?accion=editar&id=<%= Tipo.getIdUsuario() %>"><i class="bi bi-pencil"></i></button>
+                                <button class="boton boton--eliminar" href="ControlUsuario?accion=eliminar&id=<%= Tipo.getIdUsuario() %>"><i class="bi bi-trash3"></i></button>
+                            </td>
+                          </tr>
+                          <tr class="personas__fila">
+                            <td class="persona__dato persona--icono"><i class="bi bi-person-circle"></i></td>
+                            <td class="persona__dato">
+                              <p>Juan F</p>
+                              <p><span class="persona--subTitulos"> Cedula de ciudadania: </span> 1092345345</p>
+                            </td>
+                            <td class="persona__dato">
+                              <p><span class="persona--subTitulos">Telefono: </span>  3209079545</p>
+                              <p><span class="persona--subTitulos">Email: </span> jgs38@gmail.com</p>
+                            </td>
+                            <td class="persona__dato persona--sangre">A+</td>
+                            
+                            <td class="persona__dato">
+                                <span class="persona--subTitulos">Inicio de contrato:</span>
+                                <p>17/04/2024</p>
+                            </td>
+                            <td class="persona__dato">
+                                <span class="persona--subTitulos">Rol:</span>
+                                <p>Administrador</p>
+                            </td>
+
+                            <td class="persona__acciones">
+                                <button class="boton boton--editar" href="ControlUsuario?accion=editar&id=<%= Tipo.getIdUsuario() %>"><i class="bi bi-pencil"></i></button>
+                                <button class="boton boton--eliminar" href="ControlUsuario?accion=eliminar&id=<%= Tipo.getIdUsuario() %>"><i class="bi bi-trash3"></i></button>
+                            </td>
+                          </tr>
                         </tbody>
-                    </table>
+                      </table>
                 </div>
             </section>
         </main>
