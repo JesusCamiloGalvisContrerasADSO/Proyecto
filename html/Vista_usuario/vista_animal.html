@@ -10,6 +10,7 @@
 </head>
 
 <body>
+  
   <!-- este es el encabezado de la pagina -->
   <header class=" fondo_header">
     <div class="container encabezado">
@@ -85,38 +86,81 @@
           </div>
         </div>
       </div>
-      <hr class="linea__cinta ">
     </section>
     <section class="container">
-      <table class="data-table">
-        <thead>
-          <tr>
+      <div>
+        <table class="datos__persona centrar--texto ">
+          <thead>
+          <tr >
             <th>Número animal</th>
-            <th class="animal--movil">Raza</th>
+            <th class="animal--movil ">Raza</th>
             <th class="animal--movil">Sexo/tipo</th>
             <th class="animal--tablet">Peso anterior</th>
             <th>Peso nuevo</th>
             <th class="animal--tablet">Ganancia</th>
             <th class="animal--tablet">Fecha revisión</th>
-            <th>Historias clínicas</th>
+            <th class="animal--tablet">estado salud</th>
+            <th>Acciones</th>
           </tr>
         </thead>
-        <tbody id="animal-table-body">
+        <tbody >
           <tr>
-            <td>001</td>
-            <td class="animal--movil">Brahman</td>
-            <td class="animal--movil">Macho</td>
-            <td class="animal--tablet">325 KG</td>
-            <td>345 KG</td>
-            <td class="animal--tablet">20 KG</td>
-            <td class="animal--tablet">Última actualización 12/05/24</td>
-            <td><a href="historia_clinica.html"><button class="history-button">Historia Clínica</button></a></td>
+            <td class="center border--bottom"><button class="boton boton__lote">1</button></td>
+            <td class="animal--movil border--bottom">Brahman</td>
+            <td class="animal--movil border--bottom">Macho</td>
+            <td class="animal--tablet border--bottom">325 KG</td>
+            <td class="border--bottom"><input class="input_ingresar input--peso sombras--contenedor" type="number" placeholder="Ingresa..."></td>
+            <td class="animal--tablet border--bottom">20 KG</td>
+            <td class="animal--tablet border--bottom">
+              <p>Última actualización</p> 
+              <p>12/05/24</p>
+            </td>
+            <td class="animal--movil border--bottom col-salud">1</td>
+            <td class="border--bottom"><button class="boton boton--editar" href=""><i class="bi bi-pencil"></i></button></td>
           </tr>
-          <!-- More rows as needed -->
+          <tr>
+            <td class="center border--bottom"><button class="boton boton__lote">1</button></td>
+            <td class="animal--movil border--bottom">Brahman</td>
+            <td class="animal--movil border--bottom">Macho</td>
+            <td class="animal--tablet border--bottom">325 KG</td>
+            <td class="border--bottom"><input class="input_ingresar input--peso sombras--contenedor" type="number" placeholder="Ingresa..."></td>
+            <td class="animal--tablet border--bottom">20 KG</td>
+            <td class="animal--tablet border--bottom">
+              <p>Última actualización</p> 
+              <p>12/05/24</p>
+            </td>
+            <td class="animal--movil border--bottom col-salud">1</td>
+            <td class="border--bottom"><button class="boton boton--editar" href=""><i class="bi bi-pencil"></i></button></td>
+          </tr>
         </tbody>
       </table>
+    </div>
     </section>
   </main>
+  <script>
+        // Función para cambiar el color de la fila según el estado de salud
+        function cambiarColorFilaPorSalud() {
+            // Obtener todas las filas de la tabla
+            const filas = document.querySelectorAll("tbody tr");
+
+            // Iterar a través de cada fila y cambiar el color según el valor de la columna "salud"
+            filas.forEach(fila => {
+                const salud = fila.querySelector(".col-salud").innerText; // Obtener el texto de la columna salud
+                const boton = fila.querySelector(".history-button");
+
+                // Cambiar el color de fondo de la fila según el valor de salud
+                if (salud === '1') {
+                    // fila.style.backgroundColor = 'green'; // Sano
+                    // fila.remove() // Sano
+                } else if (salud === '2') {
+                    boton.style.backgroundColor = 'yellow'; // Enfermo
+                }
+            });
+        }
+
+        // Ejecutar la función cuando la página haya cargado
+        window.onload = cambiarColorFilaPorSalud;
+    </script>
 </body>
 
 </html>

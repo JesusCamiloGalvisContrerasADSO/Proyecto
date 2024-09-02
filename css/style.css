@@ -2,6 +2,7 @@
 @import url(componentes/header.css);
 @import url(pages/login.css);
 @import url(pages/lote.css);
+@import url(pages/animal.css);
 @import url(pages/historia.css);
 @import url(pages/veterinaria.css);
 @import url(pages/vet_tratamiento.css);
@@ -12,6 +13,7 @@
 @import url(pages/Historial_ventas.css);
 @import url(pages/editar_usuarios.css);
 @import url(pages/estiloSangre.css);
+@import url(../html/listar.css);
 
 
 @import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap");
