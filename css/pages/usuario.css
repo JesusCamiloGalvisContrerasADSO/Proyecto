@@ -28,6 +28,18 @@
     display: flex;
 }
 
+.cinta--perfil{
+    padding: 20px 0px;
+ }
+ 
+ .perfil--icono{
+     font-size: 50px;
+ }
+ 
+ .perfil--titulo{
+     font-weight: 900;
+ }
+
 @media (max-width: 650px){
     .Datos__usuario{
         flex-direction: column;
