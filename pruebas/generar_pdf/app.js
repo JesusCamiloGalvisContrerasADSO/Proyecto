@@ -29,8 +29,8 @@ const config = {
 
 const myPieChart = new Chart(ctx, config);
 
-document.getElementById('download').addEventListener('click', () => {
-    const element = document.getElementById('content');
+document.querySelector('#download').addEventListener('click', () => {
+    const element = document.querySelector('#content');
     const opt = {
         margin:       1,
         filename:     'myChart.pdf',
